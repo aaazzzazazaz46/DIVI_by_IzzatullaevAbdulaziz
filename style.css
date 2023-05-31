@@ -1,0 +1,810 @@
+/* основные моменты */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo 2';
+}
+.container{
+    max-width: 1176px;
+    margin: auto;
+    padding: 0 33px;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* кнопки */
+.button-white{
+    width: 252px;
+    height: 49px;
+    background: #FCFCFC;
+    border-radius: 32px;
+    border: 2px solid #FFFFFF;
+    transition: 500ms;
+    font-weight: 400;
+    font-size: 17px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    text-transform: uppercase; 
+    color: #000000;
+    cursor: pointer;
+}
+.button-white:hover{
+    background: none;
+    color: #fff;
+}
+.button-white.shadow{
+    background: rgba(0, 0, 0, 0.2);
+}
+.button-blue__background{
+    background: linear-gradient(180deg, #8D60F1 0%, #18467A 100%);
+    max-width: 350px;
+    height: 70px;
+    border-radius: 32px;
+}
+.button-blue{
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(180deg, #8D60F1 0%, #18467A 100%);
+    border-radius: 32px;
+    border: none;
+    font-weight: 700;
+    font-size: 17px;
+    text-align: center;
+    text-transform: uppercase; 
+    color: #fff;
+    transition: 500ms;
+    cursor: pointer;
+}
+.button-blue:hover{
+    background: rgba(0, 0, 0, 0.25);
+    color: #fff;
+}
+/* <-----------------------------> */
+/* <----------------------------- HEADER START -----------------------------> */
+header{
+    position: relative;
+    overflow: hidden;
+}
+.header__dots-blue{
+    position: absolute;
+    left: -9px;
+    top: 85px;
+}
+/* header top */
+.header__top{
+    height: 301px;
+    padding-top: 32px;
+    background: url(images/header/header\ back.png) no-repeat left bottom / cover;
+}
+.header__logo_and__button{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 42px;
+}
+.header__logo{
+    display: flex;
+    align-items: center;
+}
+.sub-header__logo{
+    padding-right: 21px;
+    margin-right: 21px;
+    border-right: 1px solid #fff;
+}
+.header__logo__text p{
+    font-weight: 400;
+    font-size: 17px;
+    color: #FFFFFF;
+}
+.header__title h1{
+    font-weight: 600;
+    font-size: 62px;
+    color: #FFFFFF;
+    position: relative;
+    z-index: 2;
+}
+/* <-------------------> */
+/* header bottom */
+.header__bottom{
+    padding: 42px 0 74px;
+    position: relative;
+}
+.header__bottom h2{
+    font-weight: 600;
+    font-size: 62px;
+    color: #282828;
+    position: relative;
+    z-index: 2;
+}
+.header__bottom p{
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    color: #282828;
+    max-width: 851px;
+    margin: 66px 0;
+    position: relative;
+    z-index: 2;
+}
+.header__bottom__button{
+    position: relative;
+    z-index: 2;
+}
+.header__bottom__img{
+    width: 766px;
+    position: absolute;
+    right: 0;
+    bottom: -45px;
+    z-index: 1;
+    overflow: hidden;
+}
+.header__bottom__img img{
+    max-width: 100%;
+}
+/* фдаптация header */
+@media (max-width:1040px) {
+    .header__bottom__img{
+        width: 50%;
+        bottom: 0;
+    }
+}
+@media (max-width:634px) {
+    .header__title h1{
+        font-size: 40px;
+    }
+}
+@media (max-width:530px) {
+    .header__button{
+        display: none;
+    }
+    .header__logo{
+        height: 64px;
+        margin: auto;
+    }
+    .header__logo__text p{
+        font-size: 20px;
+    }
+}
+@media (max-width:436px) {
+    .header__title h1{
+        display: none;
+    }
+    .header__dots-blue{
+        display: none;
+    }
+    .header__top{
+        height: 120px;
+        padding-top: 25px;
+    }
+    .header__bottom h2{
+        font-size: 22px;
+    }
+    .header__bottom p{
+        font-size: 17px;
+        line-height: 20px;
+        margin: 15px 0 32px;
+    }
+}
+/* <------------------------------------------> */
+/* <----------------------------- HEADER END -------------------------------> */
+/* <----------------------------- MAIN START -------------------------------> */
+/* основные */
+.main__title{
+    font-weight: 700;
+    font-size: 32px;
+    color: #282828;
+    min-height: 57px;
+}
+.main__text{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: #282828;
+}
+.main__text-bold{
+    font-weight: 700;
+}
+/* <-------> */
+/* <------ main work ------> */
+.main__work-box{
+    background: #FCFCFC;
+    padding: 57px 0;
+    position: relative;
+    z-index: -2;
+}
+/* точки */
+.main__work-dots1{
+    position: absolute;
+    left: 73px;
+    top: -66px;
+    z-index: -1;
+}
+.main__work-dots3{
+    position: absolute;
+    left: 73px;
+    bottom: -40px;
+    z-index: -1;
+}
+.main__work-dots2{
+    position: absolute;
+    right: 60px;
+    top: 48px;
+    z-index: -1;
+}
+/* <--------------> */
+.work__title{
+    margin-bottom: 24px;
+    text-align-last: center;
+}
+/* карточки */
+.work__item-box{
+    display: flex;
+    align-items: start;
+}
+.work__item{
+    width: 33%;
+    height: 100%;
+    margin-right: 35px;
+    display: flex;
+}
+.work__item__photo{
+    margin-bottom: 46px;
+}
+.item__number{
+    margin-top: 174px;
+    margin-right: 32px;
+}
+/* адаптив карточек */
+@media (max-width:840px) {
+    .work__item-box{
+        flex-direction: column;
+    }
+    .work__item{
+        width: 100%;
+        margin-bottom: 18px;
+    }
+    .work__item__photo{
+        margin-bottom: 20px;
+        order: 2;
+    }
+}
+/* <------ main work end ------> */
+/* main responsibility */
+.main__resposibility-box{
+    overflow: visible;
+}
+.main__resposibility-content{
+    display: flex;
+    padding: 53px 0;
+}
+.main__resposibility-photo{
+    position: relative;
+    top: -120px;
+    max-width: 442px;
+}
+.main__resposibility-text{
+    margin-left: 31px;
+}
+.main__resposibility-title{
+    margin-bottom: 18px;
+}
+.main__resposibility-list{
+    list-style-image: url(images/main/logos/correct.svg);
+}
+.main__resposibility-list li{
+    margin-bottom: 25px;
+    margin-left: 54px;
+}
+/* другая форма этого блока */
+.main__resposibility-content2{
+    display: none;
+}
+/* адаптив responsibility */
+@media (max-width:877px) {
+    .main__resposibility-content{
+        display: none;
+    }
+    .main__resposibility-content2{
+        display: block;
+    }
+    .main__resposibility-photo{
+        position: static;
+        margin: auto;
+        margin-bottom: 35px;
+    }
+}
+@media (max-width:480px) {
+    .main__resposibility-photo img{
+        max-width: 100%;
+    }
+    .main__title{
+        font-size: 22px;
+    }
+}
+/* <------ main responsibility end ------> */
+/* main tax agency */
+.main__tax-box{
+    background: url(images/main/tax_agency/tax\ backjpg.jpg) no-repeat left top / cover;
+    position: relative;
+    z-index: -2;
+}
+/* точки */
+.main__tax-dots{
+    position: absolute;
+    top: 362px;
+    left: 73px;
+    z-index: -1;
+}
+/* <----------> */
+.main__tax-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 59px 0 80px;
+}
+.main__tax-text{
+    max-width: 395px;
+}
+.main__tax-content h2{
+    font-weight: 700;
+    font-size: 32px;
+    color: #FFFFFF;
+}
+.main__tax-content span{
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+.main__tax-content ul{
+    margin-top: 65px;
+    list-style-image: url(images/main/logos/correct.svg);
+}
+.main__tax-content ul li{
+    margin-left: 55px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 38px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.main__tax-content p{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+/* другая форма этого блока */
+.main__tax-content2{
+    display: none;
+}
+/* адаптив tax agency */
+@media (max-width:975px) {
+    .main__tax-content{
+        display: none;
+    }
+    .main__tax-content2{
+        display: block;
+    }
+    .main__tax-content2{
+        padding: 50px 0;
+    }
+    .main__tax-content2 h2{
+        font-weight: 700;
+        font-size: 22px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .main__tax-content2 span{
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 22px;
+        text-align: center;
+        color: #FFFFFF;
+        display: block;
+    }
+    .main__tax-content2 img{
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .main__tax-photo{
+        width: 50%;
+        margin: auto;
+    }
+    .main__tax-content2 ul{
+        margin-top: 30px;
+        list-style-image: url(images/main/logos/correct.svg);
+    }
+    .main__tax-content2 ul li{
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 22px;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+        margin-left: 55px;
+    }
+    .main__tax-content2 p{
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+}
+/* <------ main tax agency end ------> */
+/* main features */
+/* основное */
+.main__features{
+    padding: 60px 0;
+}
+.main__features-content{
+    display: flex;
+}
+.main__features-title{
+    margin-bottom: 40px;
+}
+.main__features-photo{
+    margin-right: 38px;
+}
+.main__features-list{
+    list-style-image: url(images/main/logos/arrows\ 9.svg);
+    margin-bottom: -25px;
+}
+.main__features-list li{
+    margin-left: 65px;
+    margin-bottom: 25px;
+}
+/* <------> */
+.main__features.headphones,
+.main__features.card{
+    background-color: #FCFCFC;
+}
+/* точки */
+.main__features.wallet,
+.main__features.headphones{
+    position: relative;
+    z-index: -2;
+}
+.headphones-dots{
+    position: absolute;
+    top: 14px;
+    right: 60px;
+    z-index: -1;
+}
+.wallet-dots{
+    position: absolute;
+    top: 229px;
+    left: 73px;
+    z-index: -1;
+}
+/* <----------------> */
+.main__features-title span{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+.main__features-headphones-text{
+    margin: 35px 0;
+}
+/* адаптив features */
+@media (max-width:700px) {
+    .main__features-content{
+        flex-direction: column;
+    }
+    .main__features-photo{
+        margin: auto;
+    }
+}
+@media (max-width:480px) {
+    .main__features-title span{
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 20px;
+        color: #000000;
+    }
+    .main__features-title{
+        margin-bottom: 25px;
+    }
+    .main__features-photo img{
+        width: 100%;
+    }
+    .main__features-photo{
+        margin-bottom: 30px;
+        width: 50%;
+    }
+    .main__features{
+        padding: 40px 0;
+    }
+}
+/* <------ main features end ------> */
+/* main automatization */
+.main__automatization-content{
+    padding: 58px 0 74px;
+}
+.main__automatization-title{
+    text-align-last: center;
+    margin-bottom: 6px;
+}
+.main__automatization-photo{
+    width: 100%;
+}
+.main__automatization-photo img{
+    width: 100%;
+}
+/* точки */
+.main__automatization-box{
+    position: relative;
+}
+.main__automatization-dots{
+    position: absolute;
+    right: 60px;
+    bottom: 127px;
+    z-index: -1;
+}
+/* <----------------------> */
+@media (max-width:772px) {
+    .main__automatization-box{
+        display: none;
+    }
+}
+/* <------ main automatization end ------> */
+/* main comission */
+.main__comission-content{
+    padding: 50px 65px 0 65px;
+    background: #EBF4FF;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+.main__comission-photo{
+    position: relative;
+    bottom: 0px;
+    margin-right: 30px;
+}
+.main__comission-title{
+    margin-bottom: 20px;
+}
+.main__comission-list{
+    list-style-image: url(images/main/logos/arrows\ 9.svg);
+    margin-bottom: -25px;
+}
+.main__comission-list li{
+    margin-bottom: 25px;
+    margin-left: 53px;
+}
+/* адаптив comission */
+@media (max-width:1054px) {
+    .main__comission-content{
+        flex-direction: column-reverse;
+        padding: 36px 30px 0;
+    }
+    .main__comission-photo{
+        margin: auto;
+        margin-top: 10px;
+        padding: 0 10px;
+    }
+    .main__comission-photo img{
+        width: 100%;
+    }
+}
+/* <------ main comission end ------> */
+/* main partners */
+.main__partners-content{
+    padding: 64px 0;
+}
+.main__partners-title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.main__partners-logos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: -20px;
+}
+.main__partners-logos img{
+    margin-bottom: 20px;
+}
+@media (max-width:800px) {
+    .main__partners-logos img{
+        width: 30%;
+    }
+}
+/* <------ main partners end ------> */
+/* main consultation */
+.main__consultation-box{
+    background: url(images/main/consultation/consultation\ back.jpg) no-repeat center bottom / cover;
+}
+.main__consultation-content{
+    text-align: center;
+    padding: 46px 0 63px;
+}
+.main__consultation-title{
+    text-align: center;
+    margin-bottom: 9px;
+}
+.main__consultation-text{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.main__consultation-links{
+    margin-bottom: 50px;
+}
+.main__consultation-links p{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #8D60F1;
+}
+.main__consultation-button{
+    max-width: 350px;
+    margin: auto;
+}
+/* <------ main consultation end ------> */
+/* <----------------------------- MAIN END ---------------------------------> */
+/* <----------------------------- FOOTER START ---------------------------------> */
+/* footer contacts */
+.footer__contacts-box{
+    background: linear-gradient(180deg, #8D60F1 0%, #18467A 100%);
+    transform: rotate(180deg);
+}
+.footer__contacts-content{
+    padding: 53px 0 86px;
+    transform: rotate(180deg);
+}
+.footer__contacts-title{
+    margin-bottom: 72px; 
+    text-align: center;
+}
+.footer__contacts-title h2{
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #FFFFFF;    
+}
+.footer__contacts-title span{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.017em;
+    color: #FFFFFF;
+}
+.footer__contacts-title p{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: -0.017em;
+    color: #FFFFFF;
+}
+.sub-footer__contacts{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__contacts-name{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.017em;
+    color: #FFFFFF;
+    margin-bottom: 18px;    
+}
+.footer__contacts-name img{
+    margin-right: 11px;
+}
+.sub-sub-footer__contacts{
+    margin-bottom: -18px;
+}
+.sub-sub-footer__contacts a{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.017em;
+    color: #FFFFFF;    
+    margin-bottom: 18px;
+    display: block;
+}
+.sub-sub-footer__contacts a span{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.017em;
+    color: #938BE9;
+    margin-right: 30px;
+}
+/* адаптив footer contacts */
+@media (max-width:655px) {
+    .sub-footer__contacts{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width:450px) {
+    .footer__contacts-title h2{
+        font-size: 22px;
+        margin-bottom: 23px;
+    }
+    .footer__contacts-name,
+    .sub-sub-footer__contacts a,
+    .footer__contacts-title span,
+    .footer__contacts-title p{
+        font-size: 17px;
+    }
+    .footer__contacts-title{
+        margin-bottom: 21px;
+    }
+}
+/* <------ footer contacts end ------> */
+/* footer bottom */
+.footer__bottom-box{
+    background: linear-gradient(180deg, #8D60F1 0%, #18467A 100%);
+}
+.footer__bottom-background{
+    background: rgba(0, 0, 0, 0.15);
+}
+.footer__bottom-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+}
+.footer__bottom-link{
+    margin-right: -17px;
+    display: flex;
+    align-items: center;
+}
+.footer__bottom-name,
+.footer__bottom-link a{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-right: 17px;
+}
+.footer__bottom-link a span{
+    display: none;
+}
+.footer__bottom-content2{
+    display: none;
+}
+/* адаптив footer bottom */
+@media (max-width:730px) {
+    .footer__bottom-content{
+        display: none;
+    }
+    .footer__bottom-content2{
+        display: block;
+    }
+    .footer__bottom-top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 0;
+    }
+    .footer__bottom-name-box{
+        text-align: center;
+        padding: 10px 0 25px;
+    }
+}
+@media (max-width:530px) {
+    .header__logo.footer{
+        display: none;
+    }
+    .footer__bottom-link a span{
+        display: block;
+    }
+    .footer__bottom-link{
+        justify-content: space-between;
+        width: 100%;
+    }
+    .footer__bottom-link a{
+        display: flex;
+    }
+}
+/* <------ footer bottom end ------> */
